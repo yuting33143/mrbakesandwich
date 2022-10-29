@@ -1,0 +1,254 @@
+@import url('reset.css');
+
+@import url('base.css');
+
+/* join page */
+
+.jo_banner{
+    background-image: url('../img/join/banner_join.jpg');
+    background-size: cover;
+    background-position: center center;
+    box-sizing: border-box;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+ }
+.jo_title{
+    padding-top: 280px;
+    padding-bottom: 170px;
+    margin: 0 auto; 
+    
+    width: 440px;
+}
+
+.jo_title_line{
+    line-height: 70px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+    margin-bottom: 40px;
+    position: relative;
+}
+
+
+ .jo_title_line::before , 
+ .jo_title_line::after{
+    content: "";
+    display: block;
+    width: 90px;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+ }
+ .jo_title_line::before{
+    left: 20px; 
+    top: 105px; 
+ }
+ .jo_title_line::after{
+    left: 315px;
+    top: 105px; 
+ }
+
+ .jo_banner a {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 4px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 57px;
+    width: 195px;
+    line-height: 55px;
+    margin: 0 auto;
+    
+ }
+
+ .jo_banner a:hover{
+    color: #FF770F;
+    background-color: rgba(255,255,255,.3);
+ }
+
+ /* ----------上面內容--------------- */
+ .jo_content_up{
+    width: 946px;
+    margin: 103px auto 162px;
+    display: flex;
+    position: relative;
+ }
+ .jo_content_up::before{
+    content: "";
+    width: 177px;
+    height: 604px;
+    background-color: #FF770F;
+    position: absolute;
+    left: -91px;
+    top: 121px;
+    z-index: -2;
+ }
+
+ .jo_content_up img{
+    display: block;
+
+ }
+
+ .jo_article {
+    width: 630px;
+    height: 500px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 316px;
+    top: 140px;
+    padding: 70px 70px 0 70px;
+    box-sizing: border-box;
+ }
+
+ .jo_article h4{
+    margin-bottom: 40px;
+ }
+
+ .jo_article p{
+    /* width: 400px; */
+    margin-bottom: 35px;
+
+ }
+
+ .jo_text_bg{
+    color: #E3E3E3;
+    font-size: 150px;
+    transform: rotate(270deg);
+    position: absolute;
+    z-index: 2;
+    left: 695px;
+    top: 74px;
+    letter-spacing: 40px;
+    font-weight: bold;
+ }
+
+ /* ----------下面內容--------------- */
+
+ .jo_content_down{
+    width: 946px;
+    margin: 103px auto;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    align-items: end;
+ }
+
+ .jo_content_down::before{
+    content: "";
+    width: 177px;
+    height: 604px;
+    background-color: #FF770F;
+    position: absolute;
+    left: 859px;
+    top: -77px;
+    z-index: -2;
+ }
+
+ .jo_content_down img{
+    display: block;
+ }
+
+ .jo_content_down .jo_article{
+    text-align: right;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 140px;
+    padding: 70px 70px 0 130px;
+ }
+
+ .jo_content_down .jo_text_bg{
+    position: absolute;
+    z-index: 2;
+    left: -148px;
+    top: 365px;
+
+ }
+/* 表單 */
+ .form{
+    background-color: rgb(35, 16, 3);
+    color: #fff;
+ }
+ .form_info{
+    display: flex;
+    flex-direction: column;
+    max-width: 526px;
+    margin: 0 auto;
+}
+.form_info h4{
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+.form input{
+    width: 526px;
+    height: 50px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    outline: 0;
+    padding-left: 15px;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 2px;
+ }
+
+
+.form label{
+    font: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    
+}
+
+.form select{
+    width: 526px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+    padding: 15px;
+    outline: 0;
+    appearance:none;
+    -moz-appearance:none; 
+    -webkit-appearance:none;
+    background-image: url('../img/join/splider_arrow.png');
+    background-repeat: no-repeat;
+    background-position: 480px center;
+    background-size: 30px;
+
+}
+.form option{
+    background-color: rgb(23, 8, 0);
+}
+.form textarea{
+    width: 526px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid #fff;
+    outline: 0;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.btn_form{
+    width: 110px;
+    height: 40px;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 2px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px;
+ }
+ /* join page EVD */

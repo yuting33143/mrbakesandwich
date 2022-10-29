@@ -1,0 +1,107 @@
+@import url('reset.css');
+
+@import url('base.css');
+
+/* about organic food page */
+
+/* --------------------banner----------------------- */
+.ab_f_banner{
+    background-image: url('../img/about_organicfood/banner_food.jpg');
+    
+}
+
+/* 按鈕 */
+.about_btn{
+    margin: 0 auto;
+    border: 1px solid #FF770F;
+    width: 267px;
+    border-radius: 40px;
+    text-align: center;
+    position: relative;
+    margin-top: 66px;
+}
+
+.story_btn , .food_btn{
+    color: #FF770F;
+    line-height: 50px;
+    width: 130px;
+    display: inline-block;
+}
+
+.food_btn::before{
+    content: "";
+    width: 1px;
+    height: 20px;
+    background: #FF770F;
+    display: block;
+    position: absolute;
+    left: 133px;
+    top: 14px;
+}
+
+/* 內容 */
+.food{
+    padding-top: 120px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    max-width: 650px;
+    position: relative;
+}
+
+.food img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    
+    
+}
+
+.food ul{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.food li{
+    width: 250px;
+    position: absolute;
+}
+
+.food h2{
+    margin-bottom: 15px;
+}
+
+.food li:nth-child(even){
+    text-align: right;
+}
+
+.food li p:nth-child(even){
+    padding-right: 5px;
+}
+
+.food li:nth-child(1){
+    left: -140px;
+    top: 55px;
+}
+.food li:nth-child(2){
+    left: 504px;
+    top: 55px;
+}
+.food li:nth-child(3){
+    left: -232px;
+    top: 222px;
+}
+.food li:nth-child(4){
+    left: 583px;
+    top: 222px;
+}
+.food li:nth-child(5){
+    left: -140px;
+    top: 407px;
+}
+.food li:nth-child(6){
+    left: 504px;
+    top: 407px;
+}
+
+/* about organic food page END */

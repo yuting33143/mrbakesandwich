@@ -1,0 +1,219 @@
+body{
+    line-height: 1.6;
+    font-family: arial , '微軟正黑體';
+    font-size: 16px;
+    background-image: url('../img/bg.jpg');
+}
+
+/* -------------header------------ */
+header{
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+}
+
+.top{
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    box-sizing: border-box;
+}
+
+.top img{
+    width: 165px;
+    padding-left: 20px;
+    display: block;
+}
+/* 主選單 */
+.top ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top li > a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.top li > a:hover{
+    color: #FF770F;
+}
+/* 子選單 */
+.top ol  {
+    border-top: #FF770F 2px solid;
+    position: absolute;
+}
+.top ol li{
+    display: none;
+}
+.top ol a{
+    display: block;
+    color: #fff;
+    width: 100px;
+    background-color: #222;
+    font-size: 14px;
+    
+}
+.top ol a:hover{
+    background-color: rgb(27, 27, 27);;
+}
+
+.top li:hover ol > li {
+    display: block;
+}
+
+/* -------------footer------------ */
+
+footer{
+    background-color: #FF770F;
+    box-sizing: border-box;
+}
+
+.info{
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.info > a{
+    width: 165px;
+    display: block;
+    margin: 0 auto;
+}
+
+.info ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.info li{
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-right:1px solid #fff ;
+    padding: 0 20px;
+    
+}
+
+.info li:last-child{
+    border-right: none;
+}
+
+.info li a{
+    text-decoration: none;
+    color: #fff;    
+    display: block;
+
+}
+
+.info li a:hover{
+    color: saddlebrown;
+}
+
+.info img {
+    width: 165px;
+    display: block;
+    margin: 0 auto 30px;
+    padding-top: 40px;
+}
+
+.info p{
+    font-size: 12px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+}
+/* 字型---------------------------------- */
+/* h1 */
+.pagetitle{
+    font-size: 180px;
+    line-height: 0;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 400px;
+}
+
+h2{
+    font-size: 36px;
+    letter-spacing: 8px;
+    line-height: 40px;
+}
+
+h3{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+h4{
+    font-size: 32px;
+    letter-spacing: 5px;
+
+}
+
+h5{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+h6{
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+.font24px{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.font20px{
+    font-size: 20px;
+    letter-spacing: 4px;
+    line-height: 1.7;
+}
+
+.font18px{
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.font16px{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+a{
+    text-decoration: none;
+    text-align: center;
+}
+
+/* 顏色---------------------------------- */
+.orange {
+    color: #FF770F;
+}
+
+.gray{
+    color: #B8B8B8;
+}
+
+.darkgray{
+    color:#545454;
+}
+
+.white {
+    color: #fff;
+}
+
+/* banner------------------------------- */
+.banner{
+    height: 460px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; 
+    overflow: hidden;
+}
