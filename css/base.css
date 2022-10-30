@@ -8,10 +8,11 @@ body{
 /* -------------header------------ */
 header{
     background-color: rgba(0, 0, 0, .5);
-    position: fixed;
+    position: absolute;
     z-index: 100;
     top: 0;
     width: 100%;
+    transition: 0.5s;
 }
 
 .top{
@@ -67,6 +68,19 @@ header{
 
 .top li:hover ol > li {
     display: block;
+}
+/* header捲動特效 */
+.headerscroll{
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .1);
+    
+    position: fixed;
+    transition: 0.5s;
+}
+
+#header .a_scroll{
+    color: #ff7707;
+    transition: 0.7s;
 }
 
 /* -------------footer------------ */
@@ -143,6 +157,7 @@ h2{
     font-size: 36px;
     letter-spacing: 8px;
     line-height: 40px;
+    
 }
 
 h3{

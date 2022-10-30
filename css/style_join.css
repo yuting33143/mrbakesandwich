@@ -168,6 +168,7 @@
  .form{
     background-color: rgb(35, 16, 3);
     color: #fff;
+   padding-top: 20px;
  }
  .form_info{
     display: flex;

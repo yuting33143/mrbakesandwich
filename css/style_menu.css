@@ -150,6 +150,11 @@
 
 
 /* 向上按鈕 */
+.up{
+    display: none;
+    transition: 2s;
+}
+
 .up img{
     display: block;
     width: 67px;
