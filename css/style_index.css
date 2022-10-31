@@ -127,8 +127,6 @@ main h3{
 
 
 /* -------------關於我們------------ */
-
-
 .in_about .title_line::before ,.in_about .title_line::after{
     width: 22px;
 }
@@ -138,7 +136,6 @@ main h3{
     padding-bottom: 60px;
     margin-bottom: 80px;
     position: relative;
-    z-index: -2;
 }
 
 /* 關於我們-圖 */
@@ -146,7 +143,7 @@ main h3{
     position: absolute;
     right: 25%;
     bottom: 51px;
-    z-index: -1;
+    /* z-index: 1 ; */
 }
 
 .inab_bg img{
@@ -160,6 +157,7 @@ main h3{
     width: 90%;
     /* margin-right: 150px; */
     margin-top: 30px;
+    height: 502px;
     
 }
 .text{
@@ -167,6 +165,8 @@ main h3{
     justify-content: end;
     align-items: end;
     flex-direction: column;
+    position: absolute;
+    right: 10%;
 }
 .sum p{
     box-sizing: border-box;
@@ -183,12 +183,13 @@ main h3{
     line-height: 90px;
     color: #fff;
     margin-right: 24px;
-}
 
-.btn a:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+}
+.text a:hover{
+    background-color: rgba(255,255,255,0.5);
     color: #FF770F;
 }
+
 /* -------------最新消息------------ */
 
 .in_new{
