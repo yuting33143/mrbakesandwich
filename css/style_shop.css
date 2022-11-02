@@ -30,6 +30,10 @@
     display: inline-block;
 }
 
+.sh_btn1:hover , .sh_btn2:hover{
+    color:#FF770F;
+}
+
 .sh_btn2::before{
     content: "";
     width: 1px;

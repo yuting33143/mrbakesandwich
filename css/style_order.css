@@ -115,7 +115,6 @@ input[type="date"]::-webkit-clear-button{
 }
 
 
-
 /* 下方點餐菜單 */
 /* 菜單分類 */
 .or_menu{
@@ -139,6 +138,8 @@ input[type="date"]::-webkit-clear-button{
     background-color: #000;
     position: absolute;
 }
+
+
 .or_menu h6::before{
     left: 0px;
     top: 14px;
@@ -165,6 +166,12 @@ input[type="date"]::-webkit-clear-button{
 .or_menu a{
     color: #000;
 }
+
+.or_menu a:hover{
+    transform: scale(1.05);
+    transition: .3s;
+}
+
 .or_menu li{
     min-width: 270px;
     height: 82px;
@@ -172,7 +179,7 @@ input[type="date"]::-webkit-clear-button{
     background-color: #fff;
     box-shadow: 0 4px 5px rgba(0, 0, 0, .25);
     border-radius: 6px;
-    padding: 15px 25px 10px 25px;
+    padding: 15px 22px 10px 22px;
     box-sizing: border-box;
     /* margin: 0 20px 45px 20px; */
     justify-content: space-between;
@@ -181,7 +188,7 @@ input[type="date"]::-webkit-clear-button{
 
 
 .or_menu_text{
-    text-align-last: left;
+    text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -198,6 +205,9 @@ input[type="date"]::-webkit-clear-button{
     width: 75px;
     height: 50px;
     
+}
+.or_name{
+    text-indent: 3px;
 }
 
 .cart{
@@ -225,6 +235,11 @@ button{
 
 }
 
+button:hover{
+    background-color: #FFD447;
+    color: #333;
+}
+
 .or_menu ul:last-child{
     margin-bottom: 150px;
 }
@@ -233,3 +248,12 @@ footer{
     margin-top: 170px;
 }
 
+/* 錨點偏移 */
+
+.target-fix {
+    position: relative;
+    top: -120px; 
+    display: block;
+    height: 0;
+    overflow: hidden;
+}

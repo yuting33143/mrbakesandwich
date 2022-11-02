@@ -252,4 +252,9 @@
     margin-top: 45px;
     margin-bottom: 45px;
  }
+
+ .btn_form:hover{
+   background-color: #FF770F;
+   color: #FFF;
+ }
  /* join page EVD */

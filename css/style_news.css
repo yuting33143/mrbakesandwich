@@ -108,6 +108,7 @@ main h3{
     width: 42px;
     line-height: 42px;
     padding-left: 2px;
+    text-indent: -2px;
 }
 .page_btn_1{
     background-image: url('../img/news/page_1.png');

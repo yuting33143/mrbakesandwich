@@ -82,6 +82,10 @@ header{
     color: #ff7707;
     transition: 0.7s;
 }
+#header .a_scroll:hover{
+    color: saddlebrown;
+}
+
 
 /* -------------footer------------ */
 
@@ -205,6 +209,7 @@ h6{
 a{
     text-decoration: none;
     text-align: center;
+    text-indent: 5px;
 }
 
 /* 顏色---------------------------------- */

@@ -29,6 +29,10 @@
     display: inline-block;
 }
 
+.story_btn:hover , .food_btn:hover{
+    color: saddlebrown;
+}
+
 .food_btn::before{
     content: "";
     width: 1px;
