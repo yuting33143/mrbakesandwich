@@ -28,7 +28,7 @@
     display: inline-block;
 }
 
-.story_btn , .food_btn:hover{
+.story_btn:hover , .food_btn:hover{
     color: saddlebrown;
 }
 
