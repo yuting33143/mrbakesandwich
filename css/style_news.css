@@ -3,6 +3,21 @@
 @import url('base.css');
 
 /* news page */
+.top ul li:nth-child(2) a{
+    position: relative;
+}
+
+.top ul > li:nth-child(2) > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 5px;
+}
+
 /* 標題 */
 .title{
     width: 200px;

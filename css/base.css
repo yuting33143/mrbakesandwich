@@ -15,6 +15,12 @@ header{
     transition: 0.5s;
 }
 
+header .fa-solid {
+    display: none;
+    color: #fff;
+    font-size: 20px;
+}
+
 .top{
     max-width: 1280px;
     margin: 0 auto;
@@ -50,6 +56,7 @@ header{
 .top ol  {
     border-top: #FF770F 2px solid;
     position: absolute;
+    top: 63px;
 }
 .top ol li{
     display: none;
@@ -69,6 +76,7 @@ header{
 .top li:hover ol > li {
     display: block;
 }
+
 /* header捲動特效 */
 .headerscroll{
     background-color: #fff;
@@ -155,6 +163,7 @@ footer{
     text-align: center;
     font-weight: bold;
     padding-top: 400px;
+    
 }
 
 h2{
@@ -236,4 +245,60 @@ a{
     background-size: cover;
     background-position: center center; 
     overflow: hidden;
+}
+
+/* ------------------RWD---------------------- */
+
+@media screen and (max-width: 414px){
+
+/* header */
+    header{
+        box-sizing: border-box;
+    }
+
+    .top{
+        padding: 18px 20px;
+    }
+    header .fa-solid{
+        display: block;
+    }
+    .top img{
+        width: 115px;
+        padding: 0;
+    }
+
+    .top ul{ 
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #222;
+        flex-direction: column;
+        justify-content: start;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .top li{
+        border-bottom: 1px solid #fff;
+        width: 85vw;
+    }
+
+    .top li > a{
+        line-height: 85px;
+        
+    }
+
+
+
+
+    h2{
+        font-size: 24px;
+        letter-spacing: 8px;
+        line-height: 40px;
+    }
+    h3{
+        font-size: 16px;
+        letter-spacing: 4px;
+    }
 }

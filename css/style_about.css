@@ -4,6 +4,22 @@
 
 
 /* about page */
+
+.top ul li:first-child a{
+    position: relative;
+}
+
+.top ul > li:first-child > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 4px;
+}
+
 /* --------------------banner----------------------- */
 .ab_banner{
     background-image: url('../img/about_story/banner_story.jpg');

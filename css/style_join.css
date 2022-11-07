@@ -4,6 +4,21 @@
 
 /* join page */
 
+.top ul li:nth-child(5) a{
+   position: relative;
+}
+
+.top ul > li:nth-child(5) > a::before {
+   content: "";
+   display: block;
+   width: 77px;
+   height: 2px;
+   background: #FF770F;
+   position: absolute;
+   left: 19px;
+   bottom: 4px;
+}
+/* banner */
 .jo_banner{
     background-image: url('../img/join/banner_join.jpg');
     background-size: cover;
@@ -113,12 +128,12 @@
  .jo_text_bg{
     color: #E3E3E3;
     font-size: 150px;
-    transform: rotate(270deg);
+    transform: rotate(-270deg);
     position: absolute;
     z-index: 2;
-    left: 695px;
-    top: 74px;
-    letter-spacing: 40px;
+    left: 710px;
+    top: 132px;
+    letter-spacing: 30px;
     font-weight: bold;
  }
 
@@ -160,8 +175,8 @@
  .jo_content_down .jo_text_bg{
     position: absolute;
     z-index: 2;
-    left: -148px;
-    top: 365px;
+    left: -138px;
+    top: 426px;
 
  }
 /* 表單 */

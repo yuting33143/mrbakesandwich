@@ -3,7 +3,20 @@
 @import url('base.css');
 
 /* order page */
+.top ul li:nth-child(6) a{
+    position: relative;
+}
 
+.top ul > li:nth-child(6) > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 4px;
+}
 /* 上方點餐表單 */
 
 .up{

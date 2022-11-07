@@ -3,7 +3,23 @@
 @import url('base.css');
 
 /* about organic food page */
+.top ul li:first-child a{
+    position: relative;
+}
 
+.top ul > li:first-child > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 4px;
+}
+/* header .top ul li:hover a::before{
+    display: none;
+} */
 /* --------------------banner----------------------- */
 .ab_f_banner{
     background-image: url('../img/about_organicfood/banner_food.jpg');

@@ -4,6 +4,20 @@
 
 
  /* menu page */
+ .top ul li:nth-child(3) a{
+    position: relative;
+}
+
+.top ul > li:nth-child(3) > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 4px;
+}
  /* banner */
  .me_banner{
     background-image: url('../img/menu/banner_menu.jpg');
@@ -159,7 +173,7 @@
     background-color: rgba(0,0,0,.25);
     position: fixed;
     right: 100px;
-    bottom: 229px;
+    bottom: 60px;
 }
 
 footer{

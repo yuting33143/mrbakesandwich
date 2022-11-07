@@ -5,6 +5,20 @@
 
 
 /* shop page */
+.top ul li:nth-child(4) a{
+    position: relative;
+}
+
+.top ul > li:nth-child(4) > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 4px;
+}
 
 .sh_banner{
     background-image: url('../img/shop/banner_shop.jpg');
