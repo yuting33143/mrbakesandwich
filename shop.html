@@ -13,10 +13,10 @@
     <header id="header"  class="">
         <div class="top">
             <a href="index.html"><img id='img_scroll' src='img/logo_w.png' alt=""></a>
-            <i class="fa-solid fa-bars"></i>
-            <ul >
-                <li><a  class href="about.html">關於我們</a>
-                    <ol>
+            <i id='i_click' class="fa-solid fa-bars"></i>
+            <ul id="ul_show" class="">
+                <li id="ol_show"><a  class href="about.html">關於我們</a>
+                    <ol >
                         <li><a class href="about.html">品牌故事</a></li>
                         <li><a class href="about_food.html">安心食材</a></li>
                     </ol></li>
@@ -30,54 +30,71 @@
     </header>
     <main>
         <div class="banner sh_banner">
-            <h1 class="pagetitle white">SHOP</h1>
+            <h1 class="pagetitle">SHOP</h1>
         </div>
         <div class="sh_btn">
-            <a href="" class="sh_btn1">中部</a><a href="" class="sh_btn2">北部</a>
+            <a  class="sh_btn1 taichung_show">中部</a><a  class="sh_btn2 taipei_show">北部</a>
         </div>
         <h2 class="sh_title orange">服務據點</h2>
-        <table>
-            <tr class="td_title font16px darkgray">
-                <td class="column1">門市</td>
-                <td>電話</td>
-                <td>地址</td>
-            </tr>
-            <tr class="font18px">
-                <td class="column1">台北萬華店</td>
-                <td>02-22336688</td>
-                <td>台北市萬華區桂林路</td>
-                <td class="column4"><a class="btn_td" href="order.html">線上點餐</a></td>
-                <td class="column5"><a class ='map'  href=""><img src="img/shop/map.png" alt=""></a></td>
-            </tr>
-            <tr class="font18px">
-                <td class="column1">台北士林店</td>
-                <td>02-22116699</td>
-                <td>台北市士林區大東路</td>
-                <td class="column4"><a class="btn_td" href="order.html">線上點餐</a></td>
-                <td class="column5"><a class ='map'  href=""><img src="img/shop/map.png" alt=""></a></td>
-            </tr>
-            <tr class="font18px">
-                <td class="column1">新北板橋店</td>
-                <td>02-22005588</td>
-                <td>台北市板橋區文化路</td>
-                <td class="column4"><a class="btn_td" href="order.html">線上點餐</a></td>
-                <td class="column5"><a class ='map'  href=""><img src="img/shop/map.png" alt=""></a></td>
-            </tr>
-            <tr class="font18px">
-                <td class="column1">台中勤美店</td>
-                <td>04-66883355</td>
-                <td>台中市西區向上路</td>
-                <td class="column4"><a class="btn_td" href="order.html">線上點餐</a></td>
-                <td class="column5"><a class ='map'  href=""><img src="img/shop/map.png" alt=""></a></td>
-            </tr>
-            <tr class="font18px">
-                <td class="column1">台中文心店</td>
-                <td>04-22446688</td>
-                <td>台中市南屯區公益路</td>
-                <td class="column4"><a class="btn_td" href="order.html">線上點餐</a></td>
-                <td class="column5"><a class ='map'  href=""><img src="img/shop/map.png" alt=""></a></td>
-            </tr>
-        </table>
+        
+        
+        <div class="table">
+            <div class=" tr td_title font16px darkgray">
+                <p class="column1">門市</p>
+                <p class="column2">電話</p>
+                <p class="column3">地址</p>
+            </div>
+            <div class="tr font18px taichung_none">
+                <p class="column1">台北萬華店</p>
+                <p class="column2">02-22336688</p>
+                <p class="column3">台北市萬華區桂林路333巷222號</p>
+                <p class="column4"><a class="btn_td" href="order.html">線上點餐</a></p>
+                <p class="column5"><button class ='map'  href=""><img src="img/shop/map.png" alt=""></button></p>
+            </div>
+            <div class="collapse">
+                <iframe class=" google_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.8621125378345!2d121.49400011502615!3d25.03875308397014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a9abc48398f9%3A0xf70c0df5dc30e54b!2zMTA45Y-w5YyX5biC6JCs6I-v5Y2A5qGC5p6X6LevMzMz6Jmf!5e0!3m2!1szh-TW!2stw!4v1668485070646!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;"  loading="lazy" ></iframe>
+            </div>
+            <div class="tr font18px taichung_none">
+                <p class="column1">台北士林店</p>
+                <p class="column2">02-22116699</p>
+                <p class="column3">台北市士林區大東路333巷1弄222號</p>
+                <p class="column4"><a class="btn_td" href="order.html">線上點餐</a></p>
+                <p class="column5"><button class ='map'  href=""><img src="img/shop/map.png" alt=""></button></p>
+            </div>
+            <div class="collapse">
+                <iframe class=" google_map "  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3613.3500487007936!2d121.52332001502738!3d25.090009283946166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442aebaca554aa1%3A0xb05888f7f01e0dfc!2zMTEx5Y-w5YyX5biC5aOr5p6X5Y2A5aSn5p2x6Lev!5e0!3m2!1szh-TW!2stw!4v1668497659488!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="tr font18px taichung_none">
+                <p class="column1">新北板橋店</p>
+                <p class="column2">02-22005588</p>
+                <p class="column3">台北市板橋區文化路333巷222號</p>
+                <p class="column4"><a class="btn_td" href="order.html">線上點餐</a></p>
+                <p class="column5"><button class ='map'  href=""><img src="img/shop/map.png" alt=""></button></p>
+            </div>
+            <div class="collapse">
+                <iframe class=" google_map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.3897511333207!2d121.46414031502586!3d25.02084398397856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a8164fe2a96d%3A0x8198bfdbdde36d8b!2zMjIw5paw5YyX5biC5p2_5qmL5Y2A5paH5YyW6Lev5LiA5q61MzMz6Jmf!5e0!3m2!1szh-TW!2stw!4v1668497687409!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="tr font18px taipei_none">
+                <p class="column1">台中勤美店</p>
+                <p class="column2">04-66883355</p>
+                <p class="column3">台中市西區向上路333巷222號</p>
+                <p class="column4"><a class="btn_td" href="order.html">線上點餐</a></p>
+                <p class="column5"><button class ='map'  href=""><img src="img/shop/map.png" alt=""></button></p>
+            </div>
+            <div class="collapse">
+                <iframe class=" google_map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.7129635898973!2d120.65458811500893!3d24.14671648439552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693da2841301cb%3A0x6129d623f31be02d!2zNDAz5Y-w5Lit5biC6KW_5Y2A5ZCR5LiK6Lev5LiA5q61MzMz6Jmf!5e0!3m2!1szh-TW!2stw!4v1668497701609!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="tr font18px taipei_none">
+                <p class="column1">台中文心店</p>
+                <p class="column2">04-22446688</p>
+                <p class="column3">台中市南屯區公益路333巷222號</p>
+                <p class="column4"><a class="btn_td" href="order.html">線上點餐</a></p>
+                <p class="column5"><button class ='map'  href=""><img src="img/shop/map.png" alt=""></button></p>
+            </div>
+            <div class="collapse">
+                <iframe class=" google_map"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5993550485277!2d120.65388431500902!3d24.150704384393666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d99b888d7f1%3A0x69df5f1d2e5401d1!2zNDAz5Y-w5Lit5biC6KW_5Y2A5YWs55uK6LevMzMz6Jmf!5e0!3m2!1szh-TW!2stw!4v1668497716154!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="info">
@@ -93,6 +110,8 @@
             <p>本網站為緯育TibaMe前端工程師班第80期學員專題作品，本平台僅供學習、展示之用。參考資源: 喜得三明治、Qburger、呷尚寶</p>
         </div>
     </footer>
+    <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/common.js"></script>
+    <script src="js/js_shop.js"></script>
 </body>
 </html>

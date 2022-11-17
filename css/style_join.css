@@ -2,6 +2,9 @@
 
 @import url('base.css');
 
+html {
+   scroll-behavior: smooth;
+ }
 /* join page */
 
 .top ul li:nth-child(5) a{
@@ -117,6 +120,7 @@
 
  .jo_article h4{
     margin-bottom: 40px;
+    font-weight: bold;
  }
 
  .jo_article p{
@@ -266,6 +270,7 @@
     margin: 0 auto;
     margin-top: 45px;
     margin-bottom: 45px;
+    cursor: pointer;
  }
 
  .btn_form:hover{
@@ -273,3 +278,111 @@
    color: #FFF;
  }
  /* join page EVD */
+ /* RWD */
+ @media screen and (max-width: 414px){
+   .jo_banner{
+      height: 317px;
+   }
+   .jo_title_line{
+      font-size: 22px;
+      line-height: 35px;
+      margin-bottom: 25px;
+   }
+   .jo_title{
+      padding-top: 121px;
+      width: auto;
+   }
+   .jo_title_line::before, .jo_title_line::after{
+      width: 55px;
+   }
+   .jo_title_line::before{
+      left: 97px;
+      top: 54px;
+   }
+   .jo_title_line::after{
+      left: 282px;
+      top: 54px;
+   }
+   .jo_banner a{
+      font-size: 16px;
+      width: 133px;
+      line-height: 38px;
+   }
+   .jo_content_up{
+      margin: 88px auto 0;
+      width: auto;
+      flex-direction: column;
+   }
+   .jo_content_up img{
+      width: 280px;
+      margin: 0 auto;
+   }
+   .jo_content_up::before{
+      width: 175px;
+      height: 383px;
+      top: -41px;
+      left: 28px;
+   }
+   .jo_article{
+      background-color: transparent;
+      position: static;
+      width: 90%;
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+
+   }
+   .jo_text_bg{
+      font-size: 96px;
+      left: 180px;
+      top: 112px;
+      line-height: 30px;
+   }
+   .jo_article h4{
+      font-size: 20px;
+      margin-top: 65px;
+   }
+   .jo_article p{
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+   }
+   .jo_content_down{
+      width: auto;
+      margin: 100px auto;
+      flex-direction: column-reverse;
+   }
+   .jo_content_down img{
+      width: 280px;
+      margin: 0 auto;
+   }
+   .jo_content_down::before{
+      width: 175px;
+      height: 383px;
+      left: 206px;
+      top: -41px;
+   }
+   .jo_content_down .jo_text_bg{
+      left: -41px;
+      top: 33px;
+   }
+   .jo_content_down .jo_article{
+      background-color: transparent;
+      position: static;
+      width: 90%;
+      padding: 0;
+      text-align: center;
+      margin: 0 auto;
+      height: auto;
+   }
+   .form input,.form textarea,.form select{
+      width: 100%;
+   }
+   .form_info{
+      width: 85%;
+   }
+   .form_info h4{
+      margin: 32px 0;
+   }
+ }

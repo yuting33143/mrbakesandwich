@@ -97,3 +97,41 @@
 }
 
 /* about page END */
+
+/* RWD */
+@media screen and (max-width: 414px){
+    .story_btn, .food_btn{
+        font-size: 14px;
+        width: 113px;
+    }
+    .about_btn{
+        width: 227px;
+        margin-top: 35px;
+    }
+    .food_btn::before{
+        left: 116px;
+    }
+    .ab_content h2{
+        margin-top: 48px;
+    }
+    .ab_content h6{
+        margin: 32px 0 43px;
+    }
+    .ab_info li{
+        margin: 0 0 30px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    .ab_info img{
+        width: 100%;
+    }
+    .ab_info h4{
+        margin: 10px 0;
+    }
+    .ab_info li p{
+        text-align: center;
+    }
+    .ab_info{
+        margin-bottom: 40px;
+    }
+}

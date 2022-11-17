@@ -74,7 +74,7 @@ main h3{
     display: flex;
     justify-content: start;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .in_menu li{
     width: 32%;
@@ -290,8 +290,150 @@ main h3{
     z-index: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
 }
-
+/* 輪播樣式 */
 
 /* index page END */
 
 
+/* RWD */
+
+@media screen and (max-width: 414px){
+    .in_banner{
+        height: 317px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .in_banner img{
+        width: auto;
+        height: 100%;
+
+    }
+    .in_banner p{
+        font-size: 1.3em;
+        width: 80%;
+        line-height: 35px;
+    }
+
+    .in_menu h2{
+        margin-top: 40px;
+    }
+    .title_line::before , .title_line::after{
+        width: 20px;
+    }
+    .title_line::before{
+        left: 44px;
+        top: 10px;
+    }
+    .title_line::after{
+        right: 48px;
+        top: 10px;
+    }
+
+    /* 美味餐點 */
+    .in_menu li:nth-child(odd){
+        padding-top: 30px;
+        box-sizing: border-box;
+    }
+    .in_menu li{
+        width: 100%;
+        margin-bottom: 0px;
+        height: 378px;
+    }
+    .in_menu h4{
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    .in_menu .in_content{
+        margin-bottom: 0;
+    }
+    .in_menu h4:nth-child(even){
+        margin-bottom: 0;
+    }
+
+    /* 關於我們 */
+    .in_about .title_line::before ,.in_about .title_line::after{
+        width: 16px;
+        background-color: #fff;
+    }
+    .inab_bg{
+        position: static;
+        width: 100%;
+        overflow: hidden;
+        order: 3;
+    }
+    .inab_bg img{
+        height: 213px;
+        display: block;
+        /* position: absolute; */
+        /* margin:auto; */
+        /* right: -115px; */
+        float: right;
+        border-radius: 0px;
+    }
+    .sum{
+        order: 2;
+        margin: 0 auto;
+        height: 315px;
+        width: 92%;
+    }
+    .title{
+        order: 1;
+    }
+    .in_about .title h2,.in_about .title h3{
+        color: #fff;
+    }
+    .in_about{
+        display: flex;
+        flex-direction: column;
+        background:#FF770F;
+        padding-top: 40px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .sum p{
+        padding-top: 25px;
+        width: 100%;
+        font-size: 16px;
+        text-indent:38px;
+    }
+    .text{
+        position: static;
+        align-items: center;
+    }
+    .text a{
+        margin-right: 0;
+        height: 95px;
+        line-height: 95px;
+        font-size: 20px;
+    }
+
+    /* 最新消息 */
+    .in_new{
+        margin-top: 45px;
+    }
+    .new_content{
+        overflow: hidden;
+    }
+    .new_content img{
+        display: none;
+    }
+    .in_new{
+        width: 100%;
+    }
+    .new_content ul{
+        width: auto;
+        margin: 40px auto 65px;
+        margin-left: -322px;
+    }
+    .new_content li{
+        width: 334px;
+        margin: 0 10px;
+    }
+    .active_scale{
+        transform: none;
+        z-index: inherit;
+        box-shadow: none;
+    }
+
+}

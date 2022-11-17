@@ -270,3 +270,42 @@ footer{
     height: 0;
     overflow: hidden;
 }
+
+/* RWD */
+@media screen and (max-width: 414px){
+    .up{
+        margin-top: 130px;
+        width: 90%;
+        margin-bottom: 64px;
+    }
+    .or_bar{
+        width: auto;
+        overflow: hidden;
+        justify-content: start;
+        margin-bottom: 35px;
+    }
+    .or_bar li{
+        line-height: 63px;
+        padding: 0 20px;
+        flex-shrink: 0;
+    }
+    .or_bar a{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+    .or_menu{
+        width: 90%;
+    }
+    .or_menu h6::after, .or_menu h6::before{
+        width: 30%;
+    }
+    .or_title{
+        margin-bottom: 30px;
+    }
+    .or_menu ul{
+        margin-bottom: 30px;
+    }
+    button{
+        width: 90%;
+    }
+}

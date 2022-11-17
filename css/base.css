@@ -94,6 +94,10 @@ header .fa-solid {
     color: saddlebrown;
 }
 
+#header .ham_scroll{
+    color: #FF770F;
+}
+
 
 /* -------------footer------------ */
 
@@ -159,18 +163,21 @@ footer{
 /* h1 */
 .pagetitle{
     font-size: 180px;
-    line-height: 0;
+    line-height: 200px;
     text-align: center;
     font-weight: bold;
-    padding-top: 400px;
-    
+    padding-top: 299px;
+    background-image: url('../img/bg.jpg');
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 
 h2{
     font-size: 36px;
     letter-spacing: 8px;
     line-height: 40px;
-    
+    font-weight: bold;
 }
 
 h3{
@@ -191,7 +198,7 @@ h5{
 
 h6{
     font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 .font24px{
@@ -201,18 +208,18 @@ h6{
 
 .font20px{
     font-size: 20px;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
     line-height: 1.7;
 }
 
 .font18px{
     font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 
 .font16px{
     font-size: 16px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 a{
@@ -262,43 +269,138 @@ a{
     header .fa-solid{
         display: block;
     }
+
+    /* 點漢堡 ul出來 */
+    header .top .ham_ul_show{
+        left: 0;
+        transition: 1s;
+    }
     .top img{
         width: 115px;
         padding: 0;
     }
 
     .top ul{ 
-        display: none;
+        /* display: none; */
         position: absolute;
-        top: 60px;
-        left: 0;
+        top: 68px;
+        left: -100vw;
         background-color: #222;
         flex-direction: column;
         justify-content: start;
         width: 100vw;
         height: 100vh;
+        border-top: 2px solid rgba(0, 0, 0, .3);
+        transition: 1s;
     }
 
     .top li{
-        border-bottom: 1px solid #fff;
+        border-bottom: .5px solid #fff;
         width: 85vw;
-    }
-
-    .top li > a{
-        line-height: 85px;
         
     }
 
+    .top li > a{
+        line-height: 80px;
+        
+    }
 
+    .top ol li{
+        border: 0px;
 
+    }
+    .top ol a{
+        width: 80%;
+        margin: 0 auto;
+        line-height:65px;
 
+    }
+    /* .top li:hover ol > li {
+        display: none;
+    } */
+
+    /* 要改用JS */
+    .top ol li:first-child:hover .li_show{
+        display: block;
+        transition: 1s;
+    }
+    .top ol li:first-child a{
+        border-bottom: .5px solid #fff;
+        transition: .5;
+    }
+
+    .top ol{
+        position: static;
+        border-top: .5px solid #fff;
+    }
+
+    header .top ul > li:first-child > a::before ,
+    header .top ul > li:nth-child(2) > a::before ,
+    header .top ul > li:nth-child(3) > a::before ,
+    header .top ul > li:nth-child(4) > a::before ,
+    header .top ul > li:nth-child(5) > a::before ,
+    header .top ul > li:nth-child(6) > a::before {
+        display: none;
+    }
+    /* 點漢堡變色 */
+    .ham_bg{
+        background-color: #222;
+        color: #FFF;
+    }
+    /* 取消捲動ul顏色 */
+    #header .a_scroll{
+        color: #FFF;
+        transition: 0.7s;
+    }
+
+    #header .ham_scroll{
+        color: #FF770F;
+    }
+    /* 點漢堡header 白色 */
+    
+/* header END */
+/* footer */
+.info ul{
+    display: none;
+}
+.info p{
+    padding: 0 15px 20px;
+}
+
+/* footer END */
+
+    .pagetitle{
+        font-size: 72px;
+        padding-top:90px;
+    }
     h2{
         font-size: 24px;
-        letter-spacing: 8px;
-        line-height: 40px;
+        letter-spacing: 5px;
+        line-height: 30px;
     }
     h3{
         font-size: 16px;
-        letter-spacing: 4px;
+        letter-spacing: 2px;
+    }
+
+    h4{
+        font-size: 24px;
+        letter-spacing: 5px;
+
+    }
+
+    h5{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    h6{
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    /* banner */
+    .banner{
+        height: 214px;
     }
 }

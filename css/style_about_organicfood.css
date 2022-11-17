@@ -89,6 +89,7 @@
 
 .food h2{
     margin-bottom: 15px;
+    color: #656565;
 }
 
 .food li:nth-child(even){
@@ -125,3 +126,38 @@
 }
 
 /* about organic food page END */
+
+/* RWD */
+@media screen and (max-width: 414px){
+    .story_btn, .food_btn{
+        font-size: 14px;
+        width: 113px;
+    }
+    .about_btn{
+        width: 227px;
+        margin-top: 35px;
+    }
+    .food_btn::before{
+        left: 116px;
+    }
+    .food{
+        padding-top: 45px;
+        padding-bottom: 70px;
+    }
+    .food img{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .food li{
+        position: static;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto 40px;
+    }
+    .food h2{
+        color: #FF770F;
+    }
+    .food li:nth-child(even){
+        text-align: center;
+    }
+}

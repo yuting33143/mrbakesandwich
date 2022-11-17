@@ -35,7 +35,6 @@
     position: relative;
     margin-top: 66px;
     margin-bottom: 60px;
-    cursor: pointer;
 }
 
 .sh_btn1 , .sh_btn2{
@@ -69,25 +68,24 @@
 
 /* 表格 */
 
-.table{
-    width: 80%;
+table{
+    width: 70%;
     margin: 0 auto;
     margin-bottom: 150px;
-    
 }
 
-.tr{
+tr{
     border-bottom: 1px solid #9A9A9A;
-    line-height: 4;
-    display: flex;
-    cursor: pointer;
 }
 
 .td_title{
     font-weight: bold;
     border-top: 2px solid #898989;
     border-bottom: 2px solid #898989;
-    cursor: default;
+}
+
+td{
+    line-height: 4;
 }
 
 .btn_td{   
@@ -112,131 +110,38 @@
     display: block;
 }
 
-.table img{
+table img{
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    cursor: pointer;
 }
 
 .column1{
     padding-left: 10px;
-    width: 15%; 
-}
-.column2{
-    width: 20%; 
-    padding-left: 10px;
-}
-.column3{
-    width: 45%;
-    padding-left: 10px;
 }
 .column4{
-    width: 12%;
+    width: 95px;
     padding-right: 15px;
-    display: flex;
-    align-items: center;
-    padding-left: 10px;
-    justify-content: end;
 }
 
 .column5{
-    width: 3%;
+    width: 50px;
     box-sizing: border-box;
     position: relative;
-    padding-left: 10px;
-}
-button{
-    border: none;
 }
 /* google map */
 
 .collapse{
-    background-color: rgb(0, 0, 0,.1);
-    padding: 0px;
-    height: 0;
-    transition: .3s;
-    opacity: 0; 
-}
-.collapse_show{
-    height: 200px;
-    transition: .3s;
-    opacity: 1;
+
 }
 .google_map{
-    display: none;
-    margin: 0 auto;
-    width: 95%;
-    height: 200px;
-    border-radius: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-    transition: .3s ;
+    width: 
 }
-
-.map_show{
-    display: block;
-}
-/* 篩選 */
 
 
 
 /* shop page END */
-/* RWD */
-@media screen and (max-width: 414px){
-    .table{
-        width: 90%;
-    }
-    .td_title{
-        display: none;
-    }
-    .sh_title{
-        border-bottom: 2px solid #898989;
-        width: 90%;
-        margin: 0 auto;
-        padding-bottom: 60px;
-    }
-    .tr{
-        flex-wrap: wrap;
-        justify-content: space-between;
-        font-size: 16px;
-        padding-top: 10px;
-    }
-    .column1{
-        order: 1;
-        width: 40%;
-        position: relative;
-    }
-    .column2{
-        order: 3;
-        width: 100%;
 
-    }
-    .column3{
-        order: 4;
-        width: 85%;
-    }
-    .column4{
-        order: 2;
-        width: 40%;
-        padding-right:10px;
-        
-    }
-    .column5{
-        order: 5;
-        padding-right: 25px;
-    }
-    .column1::after{
-        content: "";
-        display: block;
-        width: 90px;
-        height: 2px;
-        background-color: #FF770F;
-        position: absolute;
-        bottom:13px;
-        left: 9px;
-    }
-}
