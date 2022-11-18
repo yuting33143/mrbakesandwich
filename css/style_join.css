@@ -314,7 +314,10 @@ html {
    color: rgb(50, 50, 50);
 }
 
-
+/* animate */
+.opacity{
+   opacity: 0;
+}
 
  /* join page EVD */
  /* RWD */

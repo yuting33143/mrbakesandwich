@@ -49,41 +49,53 @@ $('.cart_list').on('click', "i.fa-minus",function(){
         $(this).next('.count').html(str_count);
     }
 })
+// 關掉燈箱
+function none_lightbox_product(){
+        // 3.  按增加餐點按鈕後 關掉燈箱 且 數量歸零 
+    $('.btn_cart').on('click',function(){
+        $('.lightbox_cart').addClass('none');
+        // $('.add_cart .count').html("1") ; 
+        $('textarea').val("")  ;
+    })
 
-// 3.  按增加餐點按鈕後 關掉燈箱 且 數量歸零 
-$('.btn_cart').on('click',function(){
-    $('.lightbox_cart').addClass('none');
-    // $('.add_cart .count').html("1") ; 
-})
+    //     按叉叉按鈕可以關掉燈箱 且 數量歸零
+    $('.fa-xmark').on('click',function(){
+        $('.lightbox_cart').addClass('none');
+        // $('.add_cart .count').html("1") ; 
+        $('textarea').val("")  ;
+    })
 
-//     按叉叉按鈕可以關掉燈箱 且 數量歸零
-$('.fa-xmark').on('click',function(){
-    $('.lightbox_cart').addClass('none');
-    // $('.add_cart .count').html("1") ; 
-})
+    //     按旁邊也要可以關掉燈箱 且 數量歸零
+    $('.lightbox_cart').on('click',function(){
+        $('.lightbox_cart').addClass('none');
+        // $('.add_cart .count').html("1") ; 
+        $('textarea').val("")  ;
+    })
 
-//     按旁邊也要可以關掉燈箱 且 數量歸零
-$('.lightbox_cart').on('click',function(){
-    $('.lightbox_cart').addClass('none');
-    // $('.add_cart .count').html("1") ; 
-})
-
-//     避免點中間區塊會關掉燈箱
-$('.order_cart').on('click',function(e){
-    e.stopPropagation();
-})
+    //     避免點中間區塊會關掉燈箱
+    $('.order_cart').on('click',function(e){
+        e.stopPropagation();
+    })
+    
+}
+none_lightbox_product();
 
 // 4.  增加餐點後檢視購物車出現且有數量
 //     購物車增加li
 $('.btn_add').on('click',function(){
+    
     // console.log(this);
     $('.cart').removeClass('none');
     let str_product = $(this).closest('.order_cart').find('.product_name').text();
     let str_money = $(this).closest('.order_cart').find('.product_money > span').text();
     let str_count = $(this).closest('.down_cart').find('.count').text();
+    let product_name = $(this).closest('.order_cart').find('.product_name').text();
+    let add_count = $(this).prev('.add_cart').find('.count').text();
     // console.log(str_product);
     // console.log(str_money);
     // console.log(str_count);
+    // console.log(add_count);
+    // console.log(product_name);
     let li_str = `<li class="cart_add">
                         <p class="product font20px">
                         ${str_product}</p>
@@ -99,9 +111,37 @@ $('.btn_add').on('click',function(){
                     </li>`;
     $('.cart_list').prepend(li_str);
     update_money();
-    
+    //  內容重複時數量相加
+    $('.product').each(function(index,item){
+        // console.log(index);
+        // console.log($(item).text());
+        // console.log(($(this).text()).trim());
+        // 當產品重複時
+        if(product_name == ($(this).text()).trim() && index != 0){
+            console.log('ttt');
+            // console.log(this);
+            $(this).closest('li').remove();
+            let now_count = $(this).next('.add_cart').find('.count').text();
+            // console.log(now_count);
+            let end_count = parseInt(now_count) + parseInt(add_count) ;
+            // $(this).next('.add_cart').find('.count').text(end_count);
+            // console.log(end_count);
+            str_count = end_count ;
+            $('.product').each(function(index,item){
+                // console.log(index);
+                // console.log(($(this).text()).trim());
+                if(product_name == ($(this).text()).trim() ){
+                    console.log(this);
+                    $(this).next('.add_cart').find('.count').text(str_count);
+                }
+            })
+        }
+        
+    });
+
     
 })
+
 // 檢視購物車的數量改變時(增加) 餐點金額改變
 function update_money(){
     total_money();
@@ -247,15 +287,9 @@ function cart_close(){
 // console.log(total);
 // $('.total').html(total);
 
-// 當購物車內容重覆
-function double_list (){
-    // 當加入購物車被點擊 內容重複時數量相加
-    $('.btn_add').on('click',function(){
-        console.log(this);
-    });
-}
-double_list();
+
 
 // 7.  點付款結帳 跳轉頁面
+//  如果日期時間沒選 跳 請選擇日期時間
 
 
