@@ -277,6 +277,45 @@ html {
    background-color: #FF770F;
    color: #FFF;
  }
+
+ /* 表單彈窗 */
+.commit_wrap{
+   position: fixed;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   background-color: hsla(0, 0%, 0%, .35);
+   z-index: 10000;
+}
+
+.none{
+   display: none;
+}
+
+.commit_no, .commit_ok{
+   background-color: white;
+   border-radius: 10px;
+   box-shadow: 0 0 10px rgb(37, 37, 37,.5);
+   position: absolute;
+   padding: 0 15px;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.commit_wrap p{
+   text-align: center;
+   padding: 30px 50px ;
+}
+.form_ok , .form_no{
+   border-top: 1px solid #E3E3E3;
+   padding: 15px 10px;
+   display: block;
+   cursor: pointer;
+   color: rgb(50, 50, 50);
+}
+
+
+
  /* join page EVD */
  /* RWD */
  @media screen and (max-width: 414px){
@@ -384,5 +423,16 @@ html {
    }
    .form_info h4{
       margin: 32px 0;
+   }
+   .commit_no, .commit_ok{
+      padding: 0 20px;
+      width: 60%;
+   }
+   .commit_wrap p{
+      font-size: 14px;
+      padding: 30px 20px;
+   }
+   .form_ok, .form_no{
+      font-size: 14px;
    }
  }
