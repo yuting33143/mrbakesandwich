@@ -1,15 +1,17 @@
+// // $(document).ready(function(){
+//   $(window).resize(function() {
+//       let wdth= $(window).width();
+//       if(wdth > 1024){
+        
+//       }
+//   });
+// // });
 //美味菜單 輪播
 const swiper = new Swiper('.swiper', {
   slidesPerView: "auto",
   grabCursor: true, // 游標為手掌
   // loop: true,
   observer: true,
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  // loop: true ,
 
   // Navigation arrows
   navigation: {
@@ -18,17 +20,25 @@ const swiper = new Swiper('.swiper', {
   },
 
 });
+
 //最新消息 輪播
-const swiper2 = new Swiper('#swiper2', {
-  slidesPerView: 3,
+const swiper2 = new Swiper('.swiper2', {
+  // slidesPerView: "auto",
+  effect: "coverflow",
   grabCursor: true, // 游標為手掌
   // loop: true,
-  observer: true,
+  // observer: true,
 
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next2',
     prevEl: '.swiper-button-prev2',
   },
-
+  coverflow: {
+    // rotate: 30,
+    stretch: 10,
+    depth: 60,
+    modifier: 2,
+    slideShadows : true
+  }
 });

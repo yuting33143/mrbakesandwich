@@ -8,6 +8,8 @@
         <link rel="icon" href="img/title.ico"  type="image/x-icon">
         <link rel="stylesheet" href='css/style_menu.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+        <!-- swiper cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     </head>
     <body>
         <header id="header"  class="">
@@ -31,41 +33,41 @@
         <main>
             <div class="me_banner">
                 <h1 class="pagetitel_me">MENU</h1>
-                <div class="me_bar">
-                    <a href=""><img src="./img/menu/splider_arrow_l.png" alt=""></a>
-                    <ul>
+                <div class="me_bar swiper">
+                    <img src="./img/menu/splider_arrow_l.png" alt="" class="swiper-button-prev" style="height: auto; width: auto;">
+                    <ul class="swiper-wrapper">
                         <a href="#me_item3">
-                            <li>
+                            <li  class="swiper-slide">
                                 <img src="img/menu/bar1_menu.png" alt="">
                                 <p class="font18">輕食首選</p>
                             </li>
                         </a>
                         <a href="#me_item2">
-                            <li>
+                            <li class="swiper-slide">
                                 <img src="img/menu/bar3_menu.png" alt="">
                                 <p class="font18">果醬系列</p>
                             </li>
                         </a>
                         <a href="#me_item1">
-                            <li>
+                            <li class="swiper-slide">
                                 <img src="img/menu/bar2_menu.png" alt="">
                                 <p class="font18">碳烤三明治</p>
                             </li>
                         </a>
                         <a href="#me_item4">
-                            <li>
+                            <li class="swiper-slide">
                                 <img src="img/menu/bar4_menu.png" alt="">
                                 <p class="font18">點心小品</p>
                             </li>
                         </a>
                         <a href="#me_item5">
-                            <li>
+                            <li class="swiper-slide">
                                 <img src="img/menu/bar5_menu.png" alt="">
                                 <p class="font18">經典飲品</p>
                             </li>
                         </a>
                     </ul>
-                    <a href=""><img src="./img/menu/splider_arrow_r.png" alt=""></a>
+                    <img src="./img/menu/splider_arrow_r.png" alt="" class="swiper-button-next" style="height: auto; width: auto;">
                 </div>
             </div>
             <div class="me_btn">
@@ -167,7 +169,8 @@
         </footer>
         <script src="js/jquery-3.6.1.min.js"></script>
         <script src="js/common.js"></script>
+        <!-- swiper cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
         <script src="js/js_menu.js"></script>
-
     </body>
 </html>

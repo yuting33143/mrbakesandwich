@@ -1,6 +1,72 @@
 //限制時間日期選取
 
 
+
+//scroll後固定order bar fix
+function scroll_bar_fix (){
+    let wdth= $(window).width();
+    // console.log(wdth);
+    // 當螢幕寬小於415
+    if(wdth <= 415 ){
+        $(window).scroll(function(){
+            let win_top = $(this).scrollTop();
+            console.log(win_top)
+            if(win_top >= 490){
+                $('.or_bar').addClass('bar_fix');
+                $('.or_menu').addClass('top_fix');
+            }
+            if(win_top < 490){
+                $('.or_bar').removeClass('bar_fix');
+                $('.or_menu').removeClass('top_fix');
+            }
+        })    
+    }else{
+        $(window).scroll(function(){
+            let win_top = $(this).scrollTop();
+            console.log(win_top)
+            if(win_top >= 571){
+                $('.or_bar').addClass('bar_fix');
+                $('.or_menu').addClass('top_fix');
+            }
+            if(win_top < 571){
+                $('.or_bar').removeClass('bar_fix');
+                $('.or_menu').removeClass('top_fix');
+            }
+        })   
+    }
+}
+$(document).on('scroll',scroll_bar_fix);
+
+// 手機螢幕 or_bar swiper
+$(document).ready(function(){
+    $('.or_bar').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 5,
+        responsive: [
+        {
+            breakpoint: 880,
+            settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '20px',
+            slidesToShow: 3.5
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+            arrows: false,
+            centerMode: false,
+            centerPadding: '20px',
+            slidesToShow: 3.5
+            }
+        }
+        ]
+    });
+  });
+
+
 // 點餐流程:
 // 1.  點圖片後跳出點餐燈箱
 // console.log($('.lightbox_cart'));

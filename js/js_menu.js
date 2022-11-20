@@ -35,4 +35,18 @@ $('#lightbox .lightbox_img').on('click',function(e){
 
 
 
+//bar輪播
+const swiper = new Swiper('.swiper', {
+    slidesPerView: "auto",
+    grabCursor: true, // 游標為手掌
+    // loop: true,
+    // observer: true,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+  });
 

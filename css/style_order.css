@@ -120,19 +120,41 @@ input[type="date"]::-webkit-clear-button{
 
 .or_bar li{
     line-height: 70px;
+    /* width: 20% !important; */
+    text-align: center;
 }
 
 .or_bar a{
     color: #FF770F;
 
 }
-
-
+.bar_fix {
+    position: fixed !important;
+    top: 90px ;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    /* width: 100%; */
+    border-top: none ;
+    /* border-bottom: 1px solid #FF770F; */
+    z-index: 10;
+    box-shadow: 0px 0px 5px #ddd;
+    border-radius: 0 0 10px 10px;
+}
+/* slick */
+.slick-list{
+    padding: 0  !important;
+    /* margin: 0 auto; */
+}
 /* 下方點餐菜單 */
 /* 菜單分類 */
 .or_menu{
     width: 70%;
+    /* margin: 213px auto 0; */
     margin: 0 auto;
+}
+.top_fix{
+    margin: 210px auto 0;
 }
 .or_title{
     position: relative;
@@ -277,7 +299,7 @@ footer{
 
 .target-fix {
     position: relative;
-    top: -120px; 
+    top: -190px; 
     display: block;
     height: 0;
     overflow: hidden;
@@ -416,12 +438,14 @@ footer{
 
 .cart_list{
     width: 85%;
-    min-height: 170px;
+    /* min-height: 170px; */
     margin: 0 auto;
     margin-top: 60px;
     border-top: 2px solid rgb(73, 73, 73);
     border-bottom: 2px solid rgb(73, 73, 73);
     padding: 5px 10px 80px;
+    overflow-y: auto;
+    height: 285px;
 }
 .cart_add{
     display: flex;
@@ -431,10 +455,10 @@ footer{
     line-height: 60px;
 }
 .cart_add .product{
-
+    width: 50%;
 }
 .cart_add .add_cart{
-    margin-left: 140px;
+    /* margin-left: 140px; */
     align-items: center;
 }
 .cart_add .fa-minus ,.cart_add .fa-plus{
@@ -509,8 +533,8 @@ footer{
     }
     .or_bar li{
         line-height: 63px;
-        padding: 0 20px;
-        flex-shrink: 0;
+        /* padding: 0 20px; */
+        /* flex-shrink: 0; */
     }
     .or_bar a{
         font-size: 16px;
@@ -526,7 +550,7 @@ footer{
         margin-bottom: 30px;
     }
     .or_menu ul{
-        margin-bottom: 30px;
+        margin-bottom: 36px;
     }
     button{
         width: 90%;
@@ -589,8 +613,22 @@ footer{
     }
     .money{
         order: 4;
+        text-align: right;
     }
     .fa-trash-can{
         order: 2;
+    }
+
+    .bar_fix {
+        top: 70px;
+        border-radius: 0;
+    }
+    .top_fix{
+        margin: 160px auto 0;
+    }
+    /* 錨點偏移 */
+
+    .target-fix {
+        top: -165px; 
     }
 }

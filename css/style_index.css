@@ -261,6 +261,7 @@ main h3{
 .new_content img{
     display: block;
     width: 100%;
+    cursor: pointer;
 }
 
 .text_news h6{
@@ -297,6 +298,7 @@ main h3{
 .swiper-button-next, .swiper-button-prev{
     height: auto;
     width: auto;
+    
 }
 /* index page END */
 
