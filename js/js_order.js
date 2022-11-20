@@ -86,11 +86,11 @@ $('.btn_add').on('click',function(){
     
     // console.log(this);
     $('.cart').removeClass('none');
-    let str_product = $(this).closest('.order_cart').find('.product_name').text();
-    let str_money = $(this).closest('.order_cart').find('.product_money > span').text();
-    let str_count = $(this).closest('.down_cart').find('.count').text();
-    let product_name = $(this).closest('.order_cart').find('.product_name').text();
-    let add_count = $(this).prev('.add_cart').find('.count').text();
+    let str_product = $(this).closest('.order_cart').find('.product_name').html();
+    let str_money = $(this).closest('.order_cart').find('.product_money > span').html();
+    let str_count = $(this).closest('.down_cart').find('.count').html();
+    let product_name = $(this).closest('.order_cart').find('.product_name').html();
+    let add_count = $(this).prev('.add_cart').find('.count').html();
     // console.log(str_product);
     // console.log(str_money);
     // console.log(str_count);

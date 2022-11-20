@@ -1,23 +1,34 @@
-// var mySwiper = new Swiper ('.swiper-container', {
+//美味菜單 輪播
+const swiper = new Swiper('.swiper', {
+  slidesPerView: "auto",
+  grabCursor: true, // 游標為手掌
+  // loop: true,
+  observer: true,
 
-//     // Navigation
-//     navigation: {
-//       nextEl: '.swiper-button-next',
-//       prevEl: '.swiper-button-prev',
-//     }
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  // loop: true ,
 
-//   });
-  
-  var mySwiper = new Swiper ('.swiper-container', {
-    loop: true, // 循环模式选项
-    
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
 
-    
-    // 如果需要前进后退按钮
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-    
+});
+//最新消息 輪播
+const swiper2 = new Swiper('#swiper2', {
+  slidesPerView: 3,
+  grabCursor: true, // 游標為手掌
+  // loop: true,
+  observer: true,
 
-  })        
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next2',
+    prevEl: '.swiper-button-prev2',
+  },
+
+});
