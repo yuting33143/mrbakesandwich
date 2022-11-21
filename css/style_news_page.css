@@ -1,0 +1,99 @@
+@import url('reset.css');
+
+@import url('base.css');
+
+/* news page */
+.top ul li:nth-child(2) a{
+    position: relative;
+}
+
+.top ul > li:nth-child(2) > a::before {
+    content: "";
+    display: block;
+    width: 77px;
+    height: 2px;
+    background: #FF770F;
+    position: absolute;
+    left: 19px;
+    bottom: 5px;
+}
+
+/* 標題 */
+.title{
+    
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .title p{
+    color: #898989;
+    margin-bottom: 10px;
+}
+
+.title h2{
+    width: 80%;
+    height: 155px;
+    line-height: 1.6;
+    margin: 0 auto 50px;
+    border-bottom: 1px solid #898989;
+}
+/* banner */
+.ne_banner{
+    background-image: url('../img/news/banner_news.jpg');
+    margin-bottom: 70px;
+}
+
+/* 內容 */
+main img{
+    width: 80%;
+    margin: 0 auto 100px;
+    display: block;
+
+}
+
+.content{
+    width: 80%;
+    text-align: center;
+    margin: 0px auto 70px;
+    line-height: 1.8;
+}
+
+.back{
+    border: none;
+    width: 136px;
+    line-height: 40px;
+    background-color: #FF770F;
+    color: #fff;
+    border-radius: 30px;
+    margin: 0 auto 120px;
+    display: block;
+
+}
+.back:hover{
+    background-color: #FFD447;
+    color: #333;
+}
+
+@media screen and (max-width: 414px){
+    .ne_banner{
+        margin-bottom: 30px;
+    }
+    main .title p{
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .title h2{
+        height: 95px;
+        margin-bottom: 30px;
+    }
+    main img{
+        margin-bottom: 33px;
+    }
+    .content{
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+    .back{
+        margin-bottom: 60px;
+    }
+}

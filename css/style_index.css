@@ -126,6 +126,8 @@ main h3{
 
 .in_menu li:nth-child(even) h4{
     margin-left: 36%;
+    padding-bottom: 50px;
+
 }
 
 
@@ -139,7 +141,13 @@ main h3{
     box-sizing: border-box;
     margin-bottom: 20px;
 }
-
+.swiper-slide > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 20;
+}
 
 /* -------------關於我們------------ */
 .in_about .title_line::before ,.in_about .title_line::after{
@@ -313,6 +321,14 @@ main h3{
     z-index: 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
 }
+.new_content li a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-indent: 0;
+    text-align: left;
+}
 /* animate */
 
 /* 輪播樣式 */
@@ -449,7 +465,9 @@ main h3{
         margin-top: 45px;
     }
     .new_content{
+        width: 100%;
         overflow: hidden;
+        /* transform: scale(1.2); */
     }
     .new_content img{
         display: none;
@@ -459,12 +477,14 @@ main h3{
     }
     .new_content ul{
         width: 100%;
-        margin: -62px auto -15px;
+        margin: -25px auto 15px;
+        transform: scale(1.1);
         /* margin-left: -322px; */
     }
     .new_content li{
         /* width: 300px !important; */
-        margin: 0 7px;
+        /* height: 300px !important; */
+        margin: 0 5px;
     }
     .active_scale{
         transform: none;
@@ -476,5 +496,11 @@ main h3{
     }
     .text_news h6{
         font-size: 14px;
+    }
+    .slick-track{
+        /* width: 5000px !important; */
+    }
+    .draggable{
+        /* padding: 100px 0px !important; */
     }
 }
