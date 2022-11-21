@@ -24,6 +24,7 @@ function headerscroll(){
     }
 }
 //點擊漢堡線 ul跑出來
+/*
 let scroll_height = window.pageYOffset;
 let img_scroll = document.getElementById('img_scroll');
 let ham_scroll = document.querySelector('header i');
@@ -35,8 +36,8 @@ $('#i_click').on('click',function(){
         // ham_scroll.classList.remove('ham_scroll');
     }
 })
-
-// document.querySelector('header i').addEventListener('click',ham_click);
+*/
+document.querySelector('header i').addEventListener('click',ham_click);
 
 function ham_click(){
     let ul_show = document.getElementById('ul_show');
