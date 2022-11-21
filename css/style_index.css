@@ -209,8 +209,10 @@ main h3{
 
 }
 .text a:hover{
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.7);
     color: #FF770F;
+    transform: scale(1.1);
+    transition: .5s;
 }
 
 /* -------------最新消息------------ */

@@ -1,0 +1,40 @@
+$('.btn_1').on('click',function(){
+    $('.btn_1').addClass('page_btn_1');
+    $('.btn_1').removeClass('page_btn_2');
+    $('.btn_2').addClass('page_btn_2');
+    $('.btn_2').removeClass('page_btn_1');
+    $('.btn_3').addClass('page_btn_2');
+    $('.btn_3').removeClass('page_btn_1');
+    $('.btn_4').addClass('page_btn_2');
+    $('.btn_4').removeClass('page_btn_1');
+})
+$('.btn_2').on('click',function(){
+    $('.btn_1').addClass('page_btn_2');
+    $('.btn_1').removeClass('page_btn_1');
+    $('.btn_2').addClass('page_btn_1');
+    $('.btn_2').removeClass('page_btn_2');
+    $('.btn_3').addClass('page_btn_2');
+    $('.btn_3').removeClass('page_btn_1');
+    $('.btn_4').addClass('page_btn_2');
+    $('.btn_4').removeClass('page_btn_1');
+})
+$('.btn_3').on('click',function(){
+    $('.btn_1').addClass('page_btn_2');
+    $('.btn_1').removeClass('page_btn_1');
+    $('.btn_2').addClass('page_btn_2');
+    $('.btn_2').removeClass('page_btn_1');
+    $('.btn_3').addClass('page_btn_1');
+    $('.btn_3').removeClass('page_btn_2');
+    $('.btn_4').addClass('page_btn_2');
+    $('.btn_4').removeClass('page_btn_1');
+})
+$('.btn_4').on('click',function(){
+    $('.btn_1').addClass('page_btn_2');
+    $('.btn_1').removeClass('page_btn_1');
+    $('.btn_2').addClass('page_btn_2');
+    $('.btn_2').removeClass('page_btn_1');
+    $('.btn_3').addClass('page_btn_2');
+    $('.btn_3').removeClass('page_btn_1');
+    $('.btn_4').addClass('page_btn_1');
+    $('.btn_4').removeClass('page_btn_2');
+})

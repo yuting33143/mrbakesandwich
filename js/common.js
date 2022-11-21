@@ -47,11 +47,11 @@ function ham_click(){
     let ham_scroll = document.querySelector('header i');
     ul_show.classList.toggle('ham_ul_show');
     ham_bg.classList.toggle('ham_bg');
-    if(scroll_height>100 ){
-        img_scroll.setAttribute('src','img/logo_w.png');
-        ham_scroll.classList.remove('ham_scroll');
-    }
-    
+    // if(scroll_height>100 ){
+    //     img_scroll.toggleAttribute('src','img/logo_c.png');
+    //     // img_scroll.setAttribute('src','img/logo_c.png');
+    //     ham_scroll.classList.toggle('ham_scroll');
+    // }
 }
 
 
@@ -66,17 +66,29 @@ $('#ol_show').children('a').on('click',function(e){
         e.preventDefault();
     }
 })
+// 關於我們 點 跳子選單
 $('#ol_show').children('a').on('click',function(){
-    // $('#ol_show').unbind('mouseenter').unbind('mouseleave');
-    $(this).next('ol').find('li').slideToggle();
+    // $('#ol_show').on('mouseenter',function(){
+    //     $(this).find('li').css('display','none');
+    // })
+    // $('#ol_show').on('mouseleave',function(){
+    //     $(this).find('li').css('display','none');
+    // })
+     $(this).next('ol').find('li').toggleClass('li_show').slideToggle();
 });
 
 // mouseenter mouseleave
+let wdth= $(window).width();
 $('#ol_show').on('mouseenter',function(){
-    $(this).find('li').css('display','block');
+    if(wdth > 960){
+        $(this).find('li').css('display','block'); 
+    }
 })
+
 $('#ol_show').on('mouseleave',function(){
-    $(this).find('li').css('display','none');
+    if(wdth > 960){
+        $(this).find('li').css('display','none');
+    }
 })
 
 

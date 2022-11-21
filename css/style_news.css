@@ -132,6 +132,7 @@ main h3{
     line-height: 42px;
     padding-left: 2px;
     text-indent: -2px;
+    cursor: pointer;
 }
 .page_btn_1{
     background-image: url('../img/news/page_1.png');
@@ -143,6 +144,7 @@ main h3{
     background-image: url('../img/news/page_2.png');
     background-repeat: no-repeat;
 }
+
 
 /* news page END */
  /* RWD */
