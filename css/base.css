@@ -73,9 +73,9 @@ header .fa-solid {
     background-color: rgb(27, 27, 27);;
 }
 
-.top li:hover ol > li {
+/* .top li:hover ol > li {
     display: block;
-}
+} */
 
 /* header捲動特效 */
 .headerscroll{
@@ -255,7 +255,109 @@ a{
 }
 
 /* ------------------RWD---------------------- */
+@media screen and (max-width: 960px){
+   /* header */
+   header{
+    box-sizing: border-box;
+}
 
+.top{
+    padding: 18px 20px;
+}
+header .fa-solid{
+    display: block;
+}
+
+/* 點漢堡 ul出來 */
+header .top .ham_ul_show{
+    left: 0;
+    transition: 1s;
+}
+.top img{
+    width: 115px;
+    padding: 0;
+}
+
+.top ul{ 
+    /* display: none; */
+    position: absolute;
+    top: 68px;
+    left: -100vw;
+    background-color: #222;
+    flex-direction: column;
+    justify-content: start;
+    width: 100vw;
+    height: 100vh;
+    border-top: 2px solid rgba(0, 0, 0, .3);
+    transition: 1s;
+}
+
+.top li{
+    border-bottom: .5px solid #fff;
+    width: 85vw;
+    
+}
+
+.top li > a{
+    line-height: 80px;
+    
+}
+
+.top ol li{
+    border: 0px;
+
+}
+.top ol a{
+    width: 80%;
+    margin: 0 auto;
+    line-height:65px;
+
+}
+/* .top li:hover ol > li {
+    display: none;
+} */
+
+/* 要改用JS */
+.li_show{
+    display: block;
+    /* transition: 1s; */
+}
+.top ol li:first-child a{
+    border-bottom: .5px solid #fff;
+    transition: .5;
+}
+
+.top ol{
+    position: static;
+    border-top: .5px solid #fff;
+}
+
+header .top ul > li:first-child > a::before ,
+header .top ul > li:nth-child(2) > a::before ,
+header .top ul > li:nth-child(3) > a::before ,
+header .top ul > li:nth-child(4) > a::before ,
+header .top ul > li:nth-child(5) > a::before ,
+header .top ul > li:nth-child(6) > a::before {
+    display: none;
+}
+/* 點漢堡變色 */
+.ham_bg{
+    background-color: #222;
+    color: #FFF;
+}
+/* 取消捲動ul顏色 */
+#header .a_scroll{
+    color: #FFF;
+    transition: 0.7s;
+}
+
+#header .ham_scroll{
+    color: #FF770F;
+}
+/* 點漢堡header 白色 */
+
+/* header END */ 
+}
 @media screen and (max-width: 414px){
 
 /* header */
@@ -320,9 +422,9 @@ a{
     } */
 
     /* 要改用JS */
-    .top ol li:first-child:hover .li_show{
+    .li_show{
         display: block;
-        transition: 1s;
+        /* transition: 1s; */
     }
     .top ol li:first-child a{
         border-bottom: .5px solid #fff;
@@ -398,7 +500,12 @@ a{
         font-size: 16px;
         letter-spacing: 2px;
     }
-
+    .info img{
+        width: 130px;
+        padding-top:33px;
+        padding-right: 7px;
+        margin: 0 auto 26px;
+    }
     /* banner */
     .banner{
         height: 214px;

@@ -116,6 +116,8 @@
     }
     .ab_content h6{
         margin: 32px 0 43px;
+        padding: 0 20px;
+
     }
     .ab_info li{
         margin: 0 0 30px;
@@ -129,6 +131,7 @@
         margin: 10px 0;
     }
     .ab_info li p{
+        font-size: 16px;
         text-align: center;
     }
     .ab_info{

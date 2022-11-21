@@ -218,6 +218,7 @@ button{
     .column3{
         order: 4;
         width: 85%;
+        /* line-height: 40px; */
     }
     .column4{
         order: 2;

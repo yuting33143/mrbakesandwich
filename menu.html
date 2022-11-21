@@ -8,8 +8,10 @@
         <link rel="icon" href="img/title.ico"  type="image/x-icon">
         <link rel="stylesheet" href='css/style_menu.css'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
-        <!-- swiper cdn -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <!-- slick cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        
     </head>
     <body>
         <header id="header"  class="">
@@ -33,41 +35,41 @@
         <main>
             <div class="me_banner">
                 <h1 class="pagetitel_me">MENU</h1>
-                <div class="me_bar swiper">
-                    <img src="./img/menu/splider_arrow_l.png" alt="" class="swiper-button-prev" style="height: auto; width: auto;">
-                    <ul class="swiper-wrapper">
-                        <a href="#me_item3">
-                            <li  class="swiper-slide">
+                <div class="me_bar">
+                    <!-- <img src="./img/menu/splider_arrow_l.png" alt=""> -->
+                    <ul class="slick">
+                        <a class="me_item3">
+                            <li>
                                 <img src="img/menu/bar1_menu.png" alt="">
                                 <p class="font18">輕食首選</p>
                             </li>
                         </a>
-                        <a href="#me_item2">
-                            <li class="swiper-slide">
+                        <a class="me_item2">
+                            <li>
                                 <img src="img/menu/bar3_menu.png" alt="">
                                 <p class="font18">果醬系列</p>
                             </li>
                         </a>
-                        <a href="#me_item1">
-                            <li class="swiper-slide">
+                        <a class="me_item1">
+                            <li>
                                 <img src="img/menu/bar2_menu.png" alt="">
                                 <p class="font18">碳烤三明治</p>
                             </li>
                         </a>
-                        <a href="#me_item4">
-                            <li class="swiper-slide">
+                        <a class="me_item4">
+                            <li>
                                 <img src="img/menu/bar4_menu.png" alt="">
                                 <p class="font18">點心小品</p>
                             </li>
                         </a>
-                        <a href="#me_item5">
-                            <li class="swiper-slide">
+                        <a class="me_item5">
+                            <li>
                                 <img src="img/menu/bar5_menu.png" alt="">
                                 <p class="font18">經典飲品</p>
                             </li>
                         </a>
                     </ul>
-                    <img src="./img/menu/splider_arrow_r.png" alt="" class="swiper-button-next" style="height: auto; width: auto;">
+                    <!-- <img src="./img/menu/splider_arrow_r.png" alt="" > -->
                 </div>
             </div>
             <div class="me_btn">
@@ -82,7 +84,8 @@
             </div>
             <!-- 完整菜單img END -->
             <ul class="me_content">
-                <li id="me_item1">
+                <li >
+                    <div id="me_item1" class="target-fix"></div>
                     <img src="img/menu/content1_menu.jpg" alt="">
                     <div class="item_text">
                         <h2>碳烤三明治</h2>
@@ -93,7 +96,9 @@
                         <p class="font24px">薯泥豬肉蛋三明治</p>
                     </div>
                 </li>
-                <li id="me_item2">
+                <li >
+                    <div id="me_item2" class="target-fix"></div>
+
                     <img src="img/menu/content2_menu.jpg" alt="">
                     <div class="item_text">
                         <h2>果醬系列</h2>
@@ -104,7 +109,9 @@
                         <p class="font24px">草莓吐司</p>
                     </div>
                 </li>
-                <li id="me_item3">
+                <li >
+                    <div id="me_item3" class="target-fix"></div>
+
                     <img src="img/menu/content3_menu.jpg" alt="">
                     <div class="item_text">
                         <h2>輕食首選</h2>
@@ -115,7 +122,9 @@
                         <p class="font24px">熱帶水果優格碗</p>
                     </div>
                 </li>
-                <li id="me_item4">
+                <li >
+                    <div id="me_item4" class="target-fix"></div>
+
                     <img src="img/menu/content4_menu.jpg" alt="">
                     <div class="item_text">
                         <h2>點心小品</h2>
@@ -126,7 +135,9 @@
                         <p class="font24px">南瓜濃湯</p>
                     </div>
                 </li>
-                <li id="me_item5">
+                <li >
+                    <div id="me_item5" class="target-fix"></div>
+
                     <img src="img/menu/content5_menu.jpg" alt="">
                     <div class="item_text">
                         <h2>經典飲品</h2>
@@ -169,8 +180,9 @@
         </footer>
         <script src="js/jquery-3.6.1.min.js"></script>
         <script src="js/common.js"></script>
-        <!-- swiper cdn -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <!-- slick cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
         <script src="js/js_menu.js"></script>
     </body>
 </html>

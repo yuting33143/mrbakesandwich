@@ -335,14 +335,14 @@ html {
       width: auto;
    }
    .jo_title_line::before, .jo_title_line::after{
-      width: 55px;
+      width: 50px;
    }
    .jo_title_line::before{
-      left: 97px;
+      left: 87px;
       top: 54px;
    }
    .jo_title_line::after{
-      left: 282px;
+      left: 273px;
       top: 54px;
    }
    .jo_banner a{
@@ -438,4 +438,20 @@ html {
    .form_ok, .form_no{
       font-size: 14px;
    }
+
+   
  }
+ @media screen and (max-width: 375px){
+   .jo_text_bg{
+      left: 152px;
+   }
+   .jo_content_up::before{
+      left: 23px;
+   }
+   .jo_content_down::before{
+      left: 181px;
+   }
+   .jo_content_down .jo_text_bg{
+      left: -42px;
+   }
+}

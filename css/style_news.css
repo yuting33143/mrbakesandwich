@@ -153,12 +153,34 @@ main h3{
     .title{
         margin-bottom: 22px;
     }
+    .title_line::before{
+        top: 10px;
+        left: 43px;
+    }
+    .title_line::after{
+        top: 10px;
+        left: 131px;
+    }
+    .title_line::before, .title_line::after{
+        width: 22px;
+    }
     .ne_content{
         margin: auto;
+        width: 95%;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    .ne_content img{
+        /* width: 100%; */
+
+
+    }
+    .ne_content a{
+        width: 100%;
     }
     .ne_content li{
         margin:30px auto;
-        width: 93%;
+        width: 95%;
     }
     .ne_text h6{
         font-size: 20px;

@@ -25,7 +25,7 @@ $(".form_ok").on('click',function(){
     $('#commit_ok').addClass('none');
     $('input').val("");
 })
-
+//點外面也能關
 // $('#commit_ok').on('click',function(){
 //     $('#commit_ok').addClass('none');
 // })
@@ -36,19 +36,31 @@ $(".form_ok").on('click',function(){
 
 
 // animate.css 效果控制
-// banner 文字
-$(document).on('scroll',scroll_animate);
+// $(document).on('scroll',scroll_animate);
+// scroll_animate();
+// function scroll_animate (){
+//     let wdth= $(window).width();
+//     let height = window.pageYOffset;
+//     console.log(height);
+//     // 上方內容
+//     if(wdth > 415 ){
+//         if(height > 220){
+//             $('.jo_content_up').addClass('animate__fadeInUp');
+//         };
+//         // 下方內容
+//         if(height > 900){
+//             $('.jo_content_down').addClass('animate__fadeInUp');
+//         };
+//     }
+//     if(wdth <= 415 ){
+//         if(height > 220){
+//             $('.jo_content_up').addClass('animate__fadeInUp');
+//         };
+//         // 下方內容
+//         if(height > 900){
+//             $('.jo_content_down').addClass('animate__fadeInUp');
+//         };
+//     }
+// };
 
-function scroll_animate (){
-    let height = window.pageYOffset;
-    console.log(height);
-    if(height > 220){
-        $('.jo_content_up').addClass('animate__fadeInUp');
-    };
-    if(height > 900){
-        $('.jo_content_down').addClass('animate__fadeInUp');
-    };
-}
-// 上方內容
 
-// 下方內容

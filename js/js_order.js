@@ -10,7 +10,7 @@ function scroll_bar_fix (){
     if(wdth <= 415 ){
         $(window).scroll(function(){
             let win_top = $(this).scrollTop();
-            console.log(win_top)
+            // console.log(win_top)
             if(win_top >= 490){
                 $('.or_bar').addClass('bar_fix');
                 $('.or_menu').addClass('top_fix');
@@ -23,7 +23,7 @@ function scroll_bar_fix (){
     }else{
         $(window).scroll(function(){
             let win_top = $(this).scrollTop();
-            console.log(win_top)
+            // console.log(win_top)
             if(win_top >= 571){
                 $('.or_bar').addClass('bar_fix');
                 $('.or_menu').addClass('top_fix');
@@ -184,7 +184,7 @@ $('.btn_add').on('click',function(){
         // console.log(($(this).text()).trim());
         // 當產品重複時
         if(product_name == ($(this).text()).trim() && index != 0){
-            console.log('ttt');
+            // console.log('ttt');
             // console.log(this);
             $(this).closest('li').remove();
             let now_count = $(this).next('.add_cart').find('.count').text();
@@ -197,7 +197,7 @@ $('.btn_add').on('click',function(){
                 // console.log(index);
                 // console.log(($(this).text()).trim());
                 if(product_name == ($(this).text()).trim() ){
-                    console.log(this);
+                    // console.log(this);
                     $(this).next('.add_cart').find('.count').text(str_count);
                 }
             })

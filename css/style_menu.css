@@ -2,9 +2,6 @@
 
 @import url('base.css');
 
-html {
-    scroll-behavior: smooth;
-  }
  /* menu page */
  .top ul li:nth-child(3) a{
     position: relative;
@@ -70,7 +67,7 @@ html {
     text-align: center;
     /* border: 1px solid red; */
     box-sizing: border-box;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     
 
  }
@@ -78,6 +75,8 @@ html {
  .me_bar a{
     color: #000;
     font-weight: bold;
+    margin: 0 30px;
+    cursor: pointer;
  }
  .me_bar img{
     display: block;
@@ -139,7 +138,7 @@ html {
   }
 #lightbox img{
     width: 100%;
-    
+    display: block;
 }
 
 /* 菜單內容 */
@@ -225,7 +224,7 @@ footer{
 
 .target-fix {
     position: relative;
-    top: -100px; 
+    top: -140px; 
     display: block;
     height: 0;
     overflow: hidden;
@@ -243,16 +242,16 @@ footer{
         margin-bottom: 135px;
     }
     .me_bar{
-        height: 135px;
+        height: 155px;
         top: 170px;
         display: flex;
         align-items: center;
     }
-    .me_bar ul{
+    /* .me_bar ul{
         width: 120px;
         padding: 10px 0;
-        margin: 0 auto;
-    }
+        margin: 0 auto; 
+    }*/
     .me_bar li{
         margin: 10px 0 0 0 ;
     }
@@ -319,4 +318,17 @@ footer{
         display: block;
         top: 35px;
     }
+    #lightbox .lightbox_img{
+        width: 90%;
+        padding: 6px;
+    }
+    /* 錨點偏移 */
+    .target-fix {
+        position: relative;
+        top: -110px; 
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+
 }
