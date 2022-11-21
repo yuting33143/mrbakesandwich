@@ -259,7 +259,8 @@ footer{
         font-size: 16px;
     }
     .me_btn{
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
+        margin-top: 153px;
     }
     .me_bar > a >img{
         display: block;
