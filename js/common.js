@@ -24,16 +24,20 @@ function headerscroll(){
     }
 }
 //點擊漢堡線 ul跑出來
+let scroll_height = window.pageYOffset;
+let img_scroll = document.getElementById('img_scroll');
+let ham_scroll = document.querySelector('header i');
 $('#i_click').on('click',function(){
-    
     if(scroll_height>100 ){
         $('#ul_show').toggleClass('ham_ul_show');
         $('header').toggleClass('ham_bg')
+        // img_scroll.setAttribute('src','img/logo_w.png');
+        // ham_scroll.classList.remove('ham_scroll');
     }
 })
 
-//  document.querySelector('header i').addEventListener('click',ham_click);
-/*
+// document.querySelector('header i').addEventListener('click',ham_click);
+
 function ham_click(){
     let ul_show = document.getElementById('ul_show');
     let ham_bg = document.querySelector('header');
@@ -48,7 +52,8 @@ function ham_click(){
     }
     
 }
-*/
+
+
 
 
 // 當手機版時 header 關於我們 a失效
