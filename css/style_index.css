@@ -278,6 +278,8 @@ main h3{
     box-sizing: border-box;
     text-indent: -6px;
     bottom: 0px;
+    padding-top: 7%;
+    padding-left: 8%;
     
 }
 .new_content > img{
@@ -330,6 +332,7 @@ main h3{
     display: block;
     text-indent: 0;
     text-align: left;
+    z-index: 40;
 }
 /* animate */
 
